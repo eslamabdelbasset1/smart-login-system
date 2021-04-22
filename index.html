@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Login</title>
+        <link rel="icon" href="images/logo.jpg">
+    </head>
+    <body>
+<!--        <div class="loading-bg">-->
+<!--            <div class="loading">-->
+<!--                <span></span>-->
+<!--            </div>-->
+<!--        </div>-->
+
+        <div class="bg-checkbox">
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+        <div class="loginSection container-fluid text-center p-5" id="fristPage">
+            <h1>Smart Login System</h1>
+            <h3>SLS</h3>
+            <div id="signInSection" class="d-none"> <!-- d-none -->
+                <input
+                        type="email"
+                        id="emailInput"
+                        placeholder="Enter your email"
+                        class="form-control w-100 my-3"
+                >
+                <input
+                        type="password"
+                        id="passInput"
+                        placeholder="Enter your password"
+                        class="form-control w-100 my-3"
+                >
+                <div class="text-danger" id="warningLogin">
+
+                </div>
+                <button
+                        id="signInpBtn"
+                        class="btn btn-outline-info w-100 my-4"
+                >Login</button>
+                <div class="text-white">
+                    <span>Don't have an account? </span>
+                    <a
+                            href="#"
+                            id="SignUpLink"
+                            class="text-white"
+                    >Sign Up
+                    </a>
+                </div>
+            </div>
+
+            <div class="" id="signUpSection">
+                <input
+                        type="text"
+                        id="userName"
+                        placeholder="Enter your name"
+                        class="form-control w-100 my-3"
+                >
+                <input
+                        type="email"
+                        id="userEmail"
+                        placeholder="Enter your email"
+                        class="form-control w-100 my-3"
+                >
+                <input
+                        type="password"
+                        id="userPass"
+                        placeholder="Enter your password"
+                        class="form-control w-100 my-3"
+                >
+                <div class="text-danger" id="warning">
+
+            </div>
+                <button
+                    id="signUpBtn"
+                    class="btn btn-outline-info w-100 my-4"
+            >Sign Up</button>
+                <div class="text-white">
+                <span>You have an account? </span>
+                <a
+                        href="#"
+                        id="SigninLink"
+                        class="text-white"
+                >Sign In
+                </a>
+            </div>
+            </div>
+        </div>
+
+        <section class="d-none" id="welcomeSection">
+            <nav class="navbar w-100 group position-fixed">
+                <div class="container">
+                    <a href="#" class="text-white text-decoration-none">
+                        SMART LOGIN
+                    </a>
+                    <button
+                            id="logoutBtn"
+                            class="btn btn-outline-warning"
+                    >Logout</button>
+                </div>
+            </nav>
+            <div class="d-flex h-100 justify-content-center container align-items-center">
+                <div id="welcome" class="loginSection group container-fluid text-center h-25 w-50 p-5">
+
+                </div>
+            </div>
+        </section>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
