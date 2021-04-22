@@ -4,6 +4,7 @@ body
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
+
 .loginSection
 {
     position: relative;
@@ -15,6 +16,7 @@ body
 {
     color: #17a2b8;
     margin-bottom: 20px;
+    font-size: 2.6rem;
 }
 .loginSection h3
 {
@@ -24,9 +26,10 @@ body
     transform: translateX(-50%);
     font-size: 3.7rem;
     color: rgba(255,255,255,.1);
-
 }
-
+span,a{
+    font-size: 1.2rem;
+}
 #signInSection,
 #signUpSection
 {
@@ -45,7 +48,7 @@ input[type=text],input[type=password],input[type=email]
 
 p {
     color: red;
-    font-size: 14px;
+    font-size: 9rem;
 }
 a{
     text-decoration: none;
@@ -76,7 +79,6 @@ body{
     justify-content: center;
     font-family: "montserrat",sans-serif;
 }
-
 
 .loading-bg
 {
@@ -144,13 +146,6 @@ body{
     bottom: 20px;
     background: #102626;
     border-radius: 50%;
-/*    position: absolute;*/
-/*    width: 200px;*/
-/*    height: 200px;*/
-/*    color: #fff;*/
-/*    text-align: center;*/
-/*    line-height: 200px;*/
-/*    animation: a2 2s linear infinite;*/
 }
 
 @keyframes loading {
@@ -227,4 +222,42 @@ body.dark {
 
 .fa-sun {
     color: #f39c12;
+}
+
+@media only screen and (max-width: 576px){
+
+    .loginSection h1
+    {
+        font-size: 1.4rem;
+    }
+    .loginSection h3
+    {
+        position: absolute;
+        top: 11%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.5rem;
+    }
+    span, a {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .loginSection h1
+    {
+        font-size: 1.5rem;
+    }
+    .loginSection h3
+    {
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.7rem;
+    }
+    span, a {
+        font-size: .9rem;
+    }
 }
