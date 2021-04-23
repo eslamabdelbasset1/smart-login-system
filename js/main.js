@@ -53,19 +53,20 @@ function addUser() {
         else {
             container.push(userData);
             localStorage.setItem("myStorage", JSON.stringify(container));
-
             warning.innerHTML = `<p class="text-success"> sucess <p>`;
             clearInput();
         }
     }
     /*if not match regex*/
     else if (checkInput(userData.name, userData.email, userData.pass) == -1) {
-
+            userPass.classList.add("is-invalid");
         warning.innerHTML = `<p> pass should start with capital liter and min length 5 char </p>`;
     }
     /*if ther are any empty input */
     else if (checkInput(userData.name, userData.email, userData.pass) == false) {
-
+         userName.classList.add("is-invalid");
+         userEmail.classList.add("is-invalid");
+         userPass.classList.add("is-invalid");
         warning.innerHTML = `<p> All inputs is required </p>`;
 
     }
@@ -156,10 +157,12 @@ signInpBtn.addEventListener("click",function()
 {
     if(search(undefined,emailInput.value,undefined)[0]==false)
     {
+        emailInput.classList.add("is-invalid");
         warningLogin.innerHTML=`<p> this email doesn't exist</p>`;
     }
     else if((search(undefined,undefined,passInput.value)[0]==false))
     {
+        passInput.classList.add("is-invalid");
         warningLogin.innerHTML=`<p> this pass is incorrect</p>`;
     }
     /*if email and pass exist and the same element have thet pass*/

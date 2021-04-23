@@ -48,15 +48,29 @@ input[type=text],input[type=password],input[type=email]
 
 p {
     color: red;
-    font-size: 9rem;
+    font-size: 0.9rem;
 }
 a{
     text-decoration: none;
 }
-.group
+.group,
+.group-loginSection
 {
     box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
     color: white;
+}
+.group
+{
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+.group-loginSection
+{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 #logoutBtn:hover
 {
@@ -157,20 +171,6 @@ body{
     }
 }
 
-
-.bg-checkbox
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    transition: background 0.2s linear;
-    position: absolute;
-    top: -45%;
-    right: 4%;
-}
-
 body.dark {
     /*background: #292C35;*/
     width: 100%;
@@ -179,6 +179,20 @@ body.dark {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
+.bg-checkbox
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 99vh;
+    margin: 0;
+    transition: background 0.2s linear;
+    position: absolute;
+    top: -45%;
+    right: 4%;
+}
+
 
 .checkbox {
     opacity: 0;
@@ -241,6 +255,17 @@ body.dark {
     span, a {
         font-size: .8rem;
     }
+    .loading{
+        position: relative;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        background: #0d2323;
+        top: 40%;
+        left: 40%;
+        transform: translateX(-40%);
+        animation: loading 3s linear infinite;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -252,12 +277,23 @@ body.dark {
     .loginSection h3
     {
         position: absolute;
-        top: 12%;
+        top: 11%;
         left: 50%;
         transform: translateX(-50%);
         font-size: 1.7rem;
     }
     span, a {
-        font-size: .9rem;
+        font-size: 0.9rem;
+    }
+    .loading{
+        position: relative;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: #0d2323;
+        top: 40%;
+        left: 40%;
+        transform: translateX(-40%);
+        animation: loading 3s linear infinite;
     }
 }
