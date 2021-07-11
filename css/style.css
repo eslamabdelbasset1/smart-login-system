@@ -1,3 +1,13 @@
+/*-----------------------------------------------------------
+        INDEX CSS
+        1- Loading
+        2- Checkbox
+        3- Login Section
+            I- Sign InSection
+            II- Sign Up Section
+            III- Welcome Section
+--------------------------------------------------------------*/
+
 body
 {
     background-color: #24353f;
@@ -262,8 +272,8 @@ body.dark {
         border-radius: 50%;
         background: #0d2323;
         top: 40%;
-        left: 40%;
-        transform: translateX(-40%);
+        left: 35%;
+        transform: translateX(-35%);
         animation: loading 3s linear infinite;
     }
 }
